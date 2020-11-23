@@ -20,5 +20,10 @@ describe(('Conversión a números romanos'), () => {
   it('test 50', () => { strictEqual(toRoman(50), "L") });
   it('test 69', () => { strictEqual(toRoman(69), "LXIX") });
   it('test 90', () => { strictEqual(toRoman(90), "XC") });
-
+  it('test 100', () => { strictEqual(toRoman(100), "C") });
+  it('test 111', () => { strictEqual(toRoman(111), "CXI") });
+  it('test 200', () => { strictEqual(toRoman(200), "CC") });
+  it('test 400', () => { strictEqual(toRoman(400), "CD") });
+  it('test 500', () => { strictEqual(toRoman(500), "D") });
+  it('test 666', () => { strictEqual(toRoman(666), "DCLXVI") });
 })
