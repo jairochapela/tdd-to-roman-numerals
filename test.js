@@ -9,4 +9,16 @@ describe(('Conversión a números romanos'), () => {
   it('test 5', () => { strictEqual(toRoman(5), "V") });
   it('test 7', () => { strictEqual(toRoman(7), "VII") });
   it('test 9', () => { strictEqual(toRoman(9), "IX") });
+  it('test 10', () => { strictEqual(toRoman(10), "X") });
+  it('test 11', () => { strictEqual(toRoman(11), "XI") });
+  it('test 14', () => { strictEqual(toRoman(14), "XIV") });
+  it('test 16', () => { strictEqual(toRoman(16), "XVI") });
+  it('test 19', () => { strictEqual(toRoman(19), "XIX") });
+  it('test 20', () => { strictEqual(toRoman(20), "XX") });
+  it('test 35', () => { strictEqual(toRoman(35), "XXXV") });
+  it('test 40', () => { strictEqual(toRoman(40), "XL") });
+  it('test 50', () => { strictEqual(toRoman(50), "L") });
+  it('test 69', () => { strictEqual(toRoman(69), "LXIX") });
+  it('test 90', () => { strictEqual(toRoman(90), "XC") });
+
 })

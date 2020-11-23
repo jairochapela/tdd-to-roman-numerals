@@ -9,15 +9,31 @@ export function toRoman(n) {
 
   let resultado = "";
 
+  if (n>=90) {
+    resultado += "XC";
+    n -= 90;
+  }
+  if (n>=50) {
+    resultado += "L";
+    n -= 50;
+  }
+  if (n>=40) {
+    resultado += "XL";
+    n -= 40;
+  }
+  while (n>=10) {
+    resultado += "X";
+    n -= 10;
+  }
   if (n==9) {
-    resultado = "IX";
+    resultado += "IX";
     n -= 9;
   }
-  else if (n==4) {
-    resultado = "IV";
+  if (n==4) {
+    resultado += "IV";
     n -= 4;
   }
-  else if (n>=5) {
+  if (n>=5) {
     resultado += "V";
     n -= 5;
   }
