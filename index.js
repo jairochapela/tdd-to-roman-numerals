@@ -9,6 +9,14 @@ export function toRoman(n) {
 
   let resultado = "";
 
+  while (n>=1000) {
+    resultado += "M";
+    n -= 1000;
+  }
+  if (n>=900) {
+    resultado += "CM";
+    n -= 900;
+  }
   if (n>=500) {
     resultado += "D";
     n -= 500;

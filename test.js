@@ -26,4 +26,9 @@ describe(('Conversión a números romanos'), () => {
   it('test 400', () => { strictEqual(toRoman(400), "CD") });
   it('test 500', () => { strictEqual(toRoman(500), "D") });
   it('test 666', () => { strictEqual(toRoman(666), "DCLXVI") });
+  it('test 900', () => { strictEqual(toRoman(900), "CM") });
+  it('test 999', () => { strictEqual(toRoman(999), "CMXCIX") });
+  it('test 1000', () => { strictEqual(toRoman(1000), "M") });
+  it('test 3999', () => { strictEqual(toRoman(3999), "MMMCMXCIX") });
+
 })
